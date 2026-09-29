@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Kontakti un raidera iesūtīšana — JP sound &amp; light</title>
+  <link rel="stylesheet" href="tokens.css">
+  <link rel="stylesheet" href="components.css">
+</head>
+<body>
+  <a class="skip-link" href="#saturs">Pāriet uz saturu</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="sakums.html"><img class="brand__logo" src="../_media/logo.png" alt="JP sound &amp; light — sākums" width="1000" height="500"></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="galvena-izvelne">Izvēlne</button>
+      <nav class="nav" id="galvena-izvelne" aria-label="Galvenā izvēlne">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="sakums.html#pakalpojumi">Pakalpojumi</a></li>
+          <li><a class="nav__link" href="sakums.html#tehnika">Tehnika</a></li>
+          <li><a class="nav__link" href="darbi.html">Paveiktie darbi</a></li>
+          <li><a class="nav__link" href="sakums.html#par-mums">Par mums</a></li>
+          <li><a class="nav__link" href="kontakti.html" aria-current="page">Kontakti</a></li>
+        </ul>
+        <div class="lang" aria-label="Valoda">
+          <a class="lang__link" href="kontakti.html" lang="lv" aria-current="true">LV</a>
+          <a class="lang__link" href="#" lang="en">EN</a>
+        </div>
+        <a class="btn btn--primary btn--sm" href="kontakti.html#raiders">Iesūtīt raideri</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="saturs">
+    <section class="page-hero" aria-labelledby="lapa-v">
+      <div class="container">
+        <p class="eyebrow">Kontakti</p>
+        <h1 class="page-hero__title" id="lapa-v">Pastāstiet par savu pasākumu</h1>
+        <p class="page-hero__lead">Zvaniet, rakstiet vai atsūtiet tehnisko raideri — atbildēsim ar piedāvājumu.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-label="Saziņa">
+      <div class="container contact">
+        <aside class="contact__info" aria-label="Kontaktinformācija">
+          <div class="contact-item">
+            <p class="contact-item__label">Tālrunis</p>
+            <a class="contact-item__value" href="tel:+37129288738">+371 29288738</a>
+          </div>
+          <div class="contact-item">
+            <p class="contact-item__label">E-pasts</p>
+            <a class="contact-item__value" href="mailto:info@jpsound.lv">info@jpsound.lv</a>
+          </div>
+          <div class="contact-item">
+            <p class="contact-item__label">Adrese</p>
+            <p class="contact-item__value contact-item__value--sm">Ieriķu iela 25-73, Rīga, LV-1084</p>
+          </div>
+          <div class="contact-item">
+            <p class="contact-item__label">Seko mums</p>
+            <p class="contact-item__value contact-item__value--sm"><a href="https://www.facebook.com/jpsoundandlight">Facebook</a> · Instagram [jāprecizē] · LinkedIn [jāprecizē]</p>
+          </div>
+          <dl class="legal">
+            <div><dt>Uzņēmums</dt><dd>SIA „JP sound &amp; light”</dd></div>
+            <div><dt>Reģ. Nr.</dt><dd>LV40003784754</dd></div>
+          </dl>
+        </aside>
+
+        <form class="form" id="raiders" data-validate novalidate aria-labelledby="forma-v">
+          <h2 class="form__title" id="forma-v">Tehniskā raidera iesūtīšana</h2>
+          <p class="form__intro">Ar <span class="field__req" aria-hidden="true">*</span> atzīmētie lauki ir obligāti.</p>
+
+          <fieldset class="form__group">
+            <legend class="form__legend">Kontaktpersona</legend>
+            <div class="form__row">
+              <div class="field">
+                <label class="field__label" for="f-vards">Vārds, uzvārds <span class="field__req" aria-hidden="true">*</span></label>
+                <input class="field__input" id="f-vards" name="vards" type="text" autocomplete="name" required aria-describedby="f-vards-err">
+                <p class="field__error" id="f-vards-err">Norādiet vārdu un uzvārdu.</p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="f-uznemums">Uzņēmums vai aģentūra</label>
+                <input class="field__input" id="f-uznemums" name="uznemums" type="text" autocomplete="organization">
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field field--error">
+                <label class="field__label" for="f-epasts">E-pasts <span class="field__req" aria-hidden="true">*</span></label>
+                <input class="field__input" id="f-epasts" name="epasts" type="email" autocomplete="email" required value="janis@" aria-invalid="true" aria-describedby="f-epasts-err">
+                <p class="field__error" id="f-epasts-err">E-pasta adrese nav pilnīga — piemēram, vards@uznemums.lv.</p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="f-talrunis">Tālrunis</label>
+                <input class="field__input" id="f-talrunis" name="talrunis" type="tel" autocomplete="tel" placeholder="+371">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__group">
+            <legend class="form__legend">Pasākums</legend>
+            <div class="form__row">
+              <div class="field">
+                <label class="field__label" for="f-datums">Pasākuma datums <span class="field__req" aria-hidden="true">*</span></label>
+                <input class="field__input" id="f-datums" name="datums" type="date" required aria-describedby="f-datums-err">
+                <p class="field__error" id="f-datums-err">Norādiet pasākuma datumu.</p>
+              </div>
+              <div class="field">
+                <label class="field__label" for="f-veids">Pasākuma veids</label>
+                <select class="field__input field__select" id="f-veids" name="veids">
+                  <option value="">Izvēlieties…</option>
+                  <option>Koncerts vai festivāls</option>
+                  <option>Korporatīvs pasākums</option>
+                  <option>Konference vai prezentācija</option>
+                  <option>Sporta pasākums</option>
+                  <option>Kāzas vai svinības</option>
+                  <option>Cits</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label class="field__label" for="f-vieta">Pasākuma norises vieta (adrese vai objekta nosaukums) <span class="field__req" aria-hidden="true">*</span></label>
+              <input class="field__input" id="f-vieta" name="vieta" type="text" required aria-describedby="f-vieta-err">
+              <p class="field__error" id="f-vieta-err">Norādiet, kur notiks pasākums.</p>
+            </div>
+            <div class="field">
+              <label class="field__label" for="f-skaits">Aptuvenais apmeklētāju skaits</label>
+              <select class="field__input field__select" id="f-skaits" name="skaits">
+                <option value="">Izvēlieties…</option>
+                <option>līdz 100</option>
+                <option>100–500</option>
+                <option>500–2000</option>
+                <option>vairāk nekā 2000</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__group">
+            <legend class="form__legend">Tehniskais raiders</legend>
+            <div class="field">
+              <label class="dropzone" for="f-raiders">
+                <span class="dropzone__title">Pievienot raidera failu</span>
+                <span class="dropzone__hint" id="f-raiders-hint">PDF, DOCX, XLSX vai attēls, līdz 20 MB [paraugs — formāti un izmērs jāprecizē]</span>
+                <span class="dropzone__name">Fails nav izvēlēts</span>
+                <input class="dropzone__input" id="f-raiders" name="raiders" type="file" aria-describedby="f-raiders-hint">
+              </label>
+            </div>
+            <div class="field">
+              <label class="field__label" for="f-zina">Papildu informācija</label>
+              <textarea class="field__input field__textarea" id="f-zina" name="zina" rows="4" placeholder="Programma, mākslinieki, īpašas vēlmes…"></textarea>
+            </div>
+          </fieldset>
+
+          <div class="field field--check">
+            <input class="check__input" id="f-piekrisana" name="piekrisana" type="checkbox" required aria-describedby="f-piekrisana-err">
+            <label class="check__label" for="f-piekrisana">Piekrītu, ka mani dati un pievienotais fails tiek apstrādāti piedāvājuma sagatavošanai saskaņā ar <a href="#">privātuma politiku</a>. <span class="field__req" aria-hidden="true">*</span></label>
+            <p class="field__error" id="f-piekrisana-err">Lai nosūtītu raideri, nepieciešama piekrišana.</p>
+          </div>
+
+          <div class="form__actions">
+            <button class="btn btn--primary btn--lg" type="submit">Nosūtīt raideri</button>
+            <p class="form__status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div class="site-footer__brand">
+        <img class="brand__logo" src="../_media/logo.png" alt="JP sound &amp; light" width="1000" height="500">
+        <p class="site-footer__note">Skaņa, gaisma un skatuve pasākumiem kopš 1999.</p>
+      </div>
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Kontakti</h2>
+        <ul class="site-footer__list">
+          <li><a href="tel:+37129288738">+371 29288738</a></li>
+          <li><a href="mailto:info@jpsound.lv">info@jpsound.lv</a></li>
+          <li>Ieriķu iela 25-73, Rīga, LV-1084</li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <h2 class="site-footer__title">Seko mums</h2>
+        <ul class="site-footer__list">
+          <li><a href="https://www.facebook.com/jpsoundandlight">Facebook</a></li>
+          <li>Instagram [jāprecizē]</li>
+          <li>LinkedIn [jāprecizē]</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container site-footer__legal">© 2026 SIA „JP sound &amp; light” · Reģ. Nr. LV40003784754</div>
+  </footer>
+
+  <a class="proto-badge" href="../index.html">Prototips — visi virzieni</a>
+  <script src="../_kopigais/prototips.js"></script>
+</body>
+</html>

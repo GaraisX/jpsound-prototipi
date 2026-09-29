@@ -1,0 +1,106 @@
+/* Variants C — „Partneris” (gaišs, korporatīvs)
+   Bāze: professional (dzeltens + melns) + corporate (režģa disciplīna).
+   VIENĪGĀ vieta ar krāsām, fontiem, izmēriem, atstarpēm, rādiusiem, ēnām. */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  --variant-name: "C — Partneris";
+
+  /* Krāsas — silti balts, melns teksts; dzeltens tikai pogām/izcēlumiem. Kontrasts pārbaudīts ar skriptu. */
+  --c-bg: #FAFAF7;
+  --c-surface: #FFFFFF;
+  --c-surface-alt: #F2F1EC;
+  --c-ink: #111111;
+  --c-text: var(--c-ink);              /* 18.06:1 */
+  --c-text-strong: var(--c-ink);
+  --c-text-muted: #52525B;             /* 7.39:1 */
+  --c-border: #E4E4DF;                 /* dekoratīvas līnijas */
+  --c-border-input: #8A8A80;           /* formas lauku robeža — 3.48:1 (≥3:1, WCAG 1.4.11) */
+  --c-accent: #FECE14;                 /* logotipa dzeltenā tuvinājums — tikai fons */
+  --c-on-accent: var(--c-ink);         /* 12.64:1 */
+  --c-accent-hover: #F2BF00;
+  --c-accent-soft: #FFF6CC;            /* teksts uz tā 17.36:1 */
+  --c-brand-blue: #1E3C96;             /* logotipa zilais — saites 9.38:1 */
+  --c-brand-blue-soft: #EEF1FA;
+  --c-highlight: var(--c-accent);
+  --c-highlight-text: var(--c-brand-blue);
+  --c-link: var(--c-brand-blue);
+  --c-focus: var(--c-brand-blue);
+  --c-error: #B42318;                  /* 6.57:1 */
+  --c-error-soft: #FEF3F2;
+  --c-success: #1F6B3A;                /* 6.52:1 */
+  --c-disabled-bg: #F2F1EC;
+  --c-disabled-text: #8A8A80;
+  --c-dark: #111111;                   /* tumšie rāmji bildēm, CTA, kāja */
+  --c-on-dark: #FFFFFF;                /* 18.88:1 */
+  --c-on-dark-muted: #B4B4AE;
+
+  /* Bildes */
+  --img-filter: none;
+  --overlay-media: linear-gradient(to top, rgb(17 17 17 / 0.35), rgb(17 17 17 / 0) 50%);
+  --glow-soft: radial-gradient(60% 60% at 80% 20%, rgb(254 206 20 / 0.25), rgb(254 206 20 / 0) 70%);
+
+  /* Tipogrāfija */
+  --font-display: "Poppins", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+  --font-mono: "Inter", system-ui, sans-serif;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 600;
+  --fw-display: 600;
+  --tt-display: none;
+  --ls-display: -0.02em;
+  --ls-eyebrow: 0.06em;
+  --lh-display: 1.12;
+  --lh-hero: 1.08;
+  --lh-tight: 1.3;
+  --lh-body: 1.6;
+
+  --fs-xs: 0.8125rem;
+  --fs-sm: 0.9375rem;
+  --fs-md: 1.0625rem;
+  --fs-lg: 1.1875rem;
+  --fs-xl: clamp(1.375rem, 1.2rem + 0.6vw, 1.75rem);
+  --fs-2xl: clamp(2rem, 1.5rem + 2vw, 3.25rem);
+  --fs-3xl: clamp(2.5rem, 1.8rem + 3vw, 4.5rem);
+  --fs-hero: clamp(2.75rem, 1.8rem + 4vw, 5.25rem);
+
+  /* Atstarpes (8 px režģis) */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4rem;
+  --sp-9: 6rem;
+  --sp-10: 8rem;
+
+  /* Formas */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --r-pill: 999px;
+  --bw: 1px;
+  --bw-strong: 2px;
+  --focus-ring: 3px;
+  --shadow-sm: 0 1px 2px rgb(17 17 17 / 0.06), 0 1px 3px rgb(17 17 17 / 0.08);
+  --shadow-card: 0 12px 32px rgb(17 17 17 / 0.08), 0 2px 6px rgb(17 17 17 / 0.05);
+
+  /* Izkārtojums */
+  --container: 76rem;
+  --gutter: clamp(1rem, 0.5rem + 2vw, 2rem);
+  --hero-h: min(86vh, 48rem);
+  --header-h: 4.5rem;
+  --logo-h: 2.75rem;
+  --control-h: 2.875rem;
+  --logo-filter: none;
+
+  /* Kustība */
+  --dur-fast: 150ms;
+  --dur: 250ms;
+  --dur-fade: 1200ms;
+  --dur-kenburns: 14s;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
